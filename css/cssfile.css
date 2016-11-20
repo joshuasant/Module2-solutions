@@ -1,1 +1,115 @@
+* {
+   margin: 0;
+   padding: 0;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    align-content: center;
+}
+
+.row:after{
+    clear: both;
+}
+
+h1{
+    font-size: 1.75em;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 120px;
+}
+
+h3{
+    font-size: 1.25em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-margin-before: 15px;
+    -webkit-margin-after: 15px;
+}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 30px;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.red{
+    background-color:coral;
+}
+
+.blue{
+    background-color: lightblue;
+}
+
+.col-title{
+    float:right;
+    position: relative;
+    top: -15px;
+    right: -15px;
+    height: 30px;
+    line-height: 0;
+    padding: 0 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    
+}
+
+.col-wrap-a, .col-wrap-b{
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+}
+
+.col{
+    padding:15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color:ghostwhite;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    
+  }
+
+/* mobile */
+/* default width already set to 100% */
+
+/* tablet */
+@media (min-width:768px) and (max-width:991px){
+    .col-wrap-a{
+        width:50%; 
+        
+    }
+}
+
+/* desktop */
+@media (min-width:992px){
+    .col-wrap-a, .col-wrap-b{
+        width: 33.33333333%;
+    }
+}
